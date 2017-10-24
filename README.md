@@ -18,6 +18,7 @@
       Uso de un zumbador (opcional) para emitir señales sonoras avisando de pulsaciones y eventos).
 
   NOTAS DE ESTA VERSION:
+  
     - v3.0 (ESTA VERSION) Añadida pantalla nokia de Javier de modo que pueda usarlo tal cual.
       No añado (por ahora) el soporte para la SD.
       No he manejado nunca ni la LCD de Nokia ni el lector de SD, asi que iremos por partes.
