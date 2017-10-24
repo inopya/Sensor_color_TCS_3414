@@ -1,9 +1,9 @@
 # Sensor_color_TCS_3414
-// Autor: Eulogio López Cayuela         * #
-  *       Versión 3.0     Fecha: 18/10/2017      * #
-  *                                              * #
-  ************************************************ #
- 
+
+ Lector de COLORES  con  TCS 3414TC
+ Autor: Eulogio López Cayuela 
+ Versión 3.0     Fecha: 18/10/2017 
+                                         
 
 
   NOTA SOBRE VERSIONES PREVIAS (no disponibles):
