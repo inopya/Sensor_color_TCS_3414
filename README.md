@@ -7,6 +7,7 @@
 
 
   NOTA SOBRE VERSIONES PREVIAS (no disponibles):
+  
     - v1.0 Acceso al sensor teniendo que programar los parametros en el codigo para cada prueba.
     
     - v2.0 Uso de un menu (heredado de la centrifugadora) para introducir parametros en tiempo de ejecucion.
