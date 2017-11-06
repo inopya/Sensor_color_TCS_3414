@@ -199,7 +199,7 @@ void loop()
   boolean FLAG_pulsador = false;
   byte pulsacion = leer_Pulsador_Tactil();  // leemos el estado del pulsador tactil
 
-  if (pulsacion == 1){
+  if (pulsacion == 1){                      //condicion para tomar una lectura de color
     myGLCD.clrScr();
     myGLCD.print("Muestreando...", LEFT, 0);
 
@@ -207,7 +207,7 @@ void loop()
     FLAG_pulsador = true;                   //condicion apra tomar una lectura de color
   }
     
-  if (pulsacion == 2){                      //condicion para tomar una lectura de color
+  if (pulsacion == 2){                      //condicion para programar nuevos parametros
     pulsacion = 0;                          //anulamos el estado de la pulsacion por precaucion
     programar_Parametros();                 //volvemos al menu de programar parametros
     FLAG_pulsador = true;                   //forzamos la toma de una muestra 
@@ -358,9 +358,9 @@ struct SensorData_type  detectarSoloComponentes()
   unsigned int blue   = colorRead(0xB4);
 
   w_rgb.w = white;
-  w_rgb.r = int((float(red)* 0.9));     //red,     cambiar el 1.0 si se desea hacer pequeñas compensaciones
+  w_rgb.r = int((float(red)* 0.9));     //red,     cambiar el 0.9 si se desea hacer pequeñas compensaciones
   w_rgb.g = int((float(green)* 0.9));   //green;   al margen de ganacia y preescalar
-  w_rgb.b = int((float(blue)* 0.9));    //blue;
+  w_rgb.b = int((float(blue)* 0.9));    //blue;    Poniendo 1.0 se dejan los valores tal como se leen
 
   return w_rgb;
 }
