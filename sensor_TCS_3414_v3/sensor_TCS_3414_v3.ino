@@ -170,7 +170,6 @@ void setup() //inicializacion del sistema
 
 
     
-  pitidos(2);                                 // dos pitidos para avisar de que se ha inicializado todo
  
   Wire.begin();
   TSC3414_begin();
@@ -178,7 +177,8 @@ void setup() //inicializacion del sistema
   //parametros por defecto (en estas funciones solo podemos poner valores preestablecidos)
   TSC3414_set_Timing_Register (400);           // int milisegundos (12,100,400) 
   TSC3414_set_gain_and_prescaler (64, 4);      // byte gain(1,4,16,64), byte prescaler(1,2,4,8,16,32,64)  
-
+  pitidos(2);                                 // dos pitidos para avisar de que se ha inicializado todo
+ 
   delay(100);
 }
 
